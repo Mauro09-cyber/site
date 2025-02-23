@@ -28,9 +28,9 @@ PRO
 
 /* Reset */
 body, html{ font-family: 'Inter', sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{padding-left: 20px;line-height: 1.5;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
-body{ background:  #d7d7d7; overflow-x: hidden}
+body{ background:  #d7d7d7; overflow-x: hidden; width:100%}
 
-html{scroll-behavior: smooth;}
+html{scroll-behavior: smooth; overflow-x: hidden; width:100%}
 
 /* Menu */
 :root { --menu-bg: #384b7b; --menu-color: #fff; }
