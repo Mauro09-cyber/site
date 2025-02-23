@@ -35,15 +35,22 @@ html{scroll-behavior: smooth;}
 /* Menu */
 :root { --menu-bg: #384b7b; --menu-color: #fff; }
 
-.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%; padding: 10px 15px; }
-.header__content{max-width: 100%;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
+.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%; padding: 10px 5px; }
+.header__content{max-width: 1200px;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
 
 .header__logo,
 .header__quick{display: flex; align-items: center;color:var(--menu-color)}
 
-.header__menu{padding: 0;margin: 0;}
+.header__menu{
+  padding: 0; 
+  margin: 0; 
+  display: flex; /* Mantieni il menu in linea orizzontale */
+  list-style: none; /* Rimuovi i punti di elenco */
+  border: none; /* Rimuovi eventuali bordi */
+  overflow: visible; /* Assicurati che non ci sia overflow */
+}
 .header__menu li{display: inline-block;}
-.header__menu li a{color:var(--menu-color); opacity: 1;display: block;padding: 16px;font-size: 15px;}
+.header__menu li a{color:var(--menu-color); opacity: 1;display: block;padding: 19px;font-size: 15px;}
 
 .header__menu a.underline{text-decoration: none;color:none}
 
@@ -65,6 +72,20 @@ html{scroll-behavior: smooth;}
 
   .header__quick{display: flex; justify-content: flex-end; width: 50%;}
 
+}
+@media (min-width: 769px) {
+  .header__menu {
+      position: static; /* Cambiato da absolute */
+      display: flex; /* Assicurati che i menu siano visualizzati come una riga */
+      overflow: visible; /* Assicurati che non ci sia overflow */
+      transition: none; /* Disattiva le transizioni su desktop */
+      transform: none; /* Disattiva il movimento su desktop */
+      height: auto; /* Altezza automatica per il contenuto */
+  }
+
+  .header__menu li {
+      display: inline-block; /* Mantieni i menu affiancati */
+  }
 }
 
 /* ! Spacer */
