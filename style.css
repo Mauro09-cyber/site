@@ -35,7 +35,7 @@ html{scroll-behavior: smooth; overflow-x: hidden; width:100%}
 /* Menu */
 :root { --menu-bg: #384b7b; --menu-color: #fff; }
 
-.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%; padding: 10px 15px; }
+.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%; padding: 5px 9px; }
 .header__content{max-width: 1200px;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
 
 .header__logo,
